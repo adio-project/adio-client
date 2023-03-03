@@ -1,0 +1,8 @@
+<!-- TODO: change color of borders to black on transition -->
+<div class="requiredinputform" style="color:#000000;">
+  <mat-form-field  appearance="outline" [formGroup]="joinForm" (ngSubmit)="joinGame()">
+    <mat-label>Enter GAME PIN</mat-label>
+    <input matInput #input maxlength="8" placeholder="Ex: 6JP2GMD9">
+    <mat-hint align="end">{{input.value?.length || 0}}/8</mat-hint>
+    </mat-form-field>
+</div>

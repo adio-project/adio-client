@@ -1,0 +1,40 @@
+<ng-template #loginModal let-modal>
+  <div class="container-fluid">
+    <div class="modal-body">
+      <div class="row spotifyrow">
+        <a
+          class="spotifylink"
+          target="_self"
+          href="https://connect.deezer.com/oauth/auth.php?app_id=583884&redirect_uri=http://localhost:4200/home/play-create&response_type=token&perms=basic_access,email"
+        >
+          <button
+            mat-raised-button
+            style="background-color: #c300ff; width: 100%;"
+            class="deezerbutton"
+          >
+            Log in with <img src = "assets/deezerlogo/deezerlogoblack.svg" alt="Deezer"/>
+          </button>
+        </a>
+      </div>
+      <div class="row or">
+        <div class="container-fluid">or</div>
+      </div>
+      <div class="row guestrow">
+        <a
+          class="guestlink"
+          target="_self"
+          [routerLink]="'guest'"
+        >
+          <button
+            mat-raised-button
+            style="background-color: #c300ff; width: 100%;"
+            class="guestbutton"
+            (click)="modal.close('As guest')"
+          >
+            Log in as Guest
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</ng-template>

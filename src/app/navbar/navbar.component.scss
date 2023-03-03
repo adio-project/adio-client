@@ -1,0 +1,63 @@
+nav {
+  background-color: black;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f041b6;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  animation: color-change ease-in-out 1s infinite alternate;
+}
+
+.adio {
+  // display: block;
+  text-decoration:dotted underline;
+  color: #c300ff;
+  font-weight: 1000;
+  font-size: 2rem;
+  inset: 1 auto auto auto;
+}
+
+.adio:hover {
+  animation: color-change-adio ease-in-out 1s infinite alternate;
+}
+
+.row {
+  width:100%;
+}
+
+.links {
+  display: flex;
+  padding-top: 2vh;
+  gap: 2rem;
+}
+
+@keyframes color-change {
+    from {color: #f041b6}
+    to {color: #c300ff}
+}
+
+@keyframes color-change-adio {
+  from {color: #c300ff}
+  to {color: #f041b6}
+}

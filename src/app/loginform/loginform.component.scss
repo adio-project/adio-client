@@ -1,0 +1,25 @@
+.modal-backdrop {
+  background-color: #000000;
+}
+
+.modal-content {
+  background-color: #c300ff;
+}
+
+.spotifylink, .guestlink, .or {
+  text-decoration: none;
+  color:#000000;
+  font-size: 0.8rem;
+  font-weight: 1000;
+}
+
+.spotifyrow, .guestrow, .or {
+  margin: 5% 0 5% 0;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+a:focus {
+  outline: 0;
+}

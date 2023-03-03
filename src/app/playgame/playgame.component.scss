@@ -1,0 +1,51 @@
+.playgame {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color:#000000;
+}
+
+.row {
+  width:100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.col {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+* {
+  // border: 1px solid lightgreen;
+}
+
+.pincontainer {
+  width: 25%;
+  height: 30%;
+  margin-top: 20vh;
+  display: grid;
+  background-color: #f041b6;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pincontainer {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .pincontainer {
+    width: 60%;
+  }
+}
+
+.joingame {
+  margin-top: 1rem;
+  font-weight: 800;
+  font-size: 2rem;
+}

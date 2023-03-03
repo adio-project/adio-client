@@ -1,0 +1,36 @@
+.createGame {
+  height: 100%;
+  width: 100%;
+  position:relative;
+  display: grid;
+}
+
+.col {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+.createButton {
+
+}
+
+.buttonRow {
+  inset: auto auto 5vh auto;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.buttonCol {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.createGame:hover, .gamePlay:hover {
+  animation: color-change ease-in-out 1s infinite alternate;
+}
+
+@keyframes color-change {
+  from {color: #f041b6}
+  to {color: #c300ff}
+}
